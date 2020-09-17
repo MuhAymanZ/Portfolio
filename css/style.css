@@ -176,7 +176,7 @@ video{
     height: 100vh;
     position: relative;
     background-color: #0c0c0c;
-    border-top: 28px dashed #F1F2F2;
+    border-top: 15px double #F1F2F2;
     
     
 }
@@ -187,6 +187,7 @@ video{
     cursor: pointer;
     transition: 0.3s ease;
     border: #c72253 solid 5px ;
+    margin: auto;
 
 
 }
@@ -263,7 +264,7 @@ video{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 28px dashed #F1F2F2;
+    border-top: 15px double #F1F2F2;
     
 }
 
@@ -400,7 +401,7 @@ i{
     background-color: #0c0c0c;
     display:flex;
     flex-direction: column;
-    border-top: 28px dashed #F1F2F2;
+    border-top: 15px double #F1F2F2;
     
     
     
