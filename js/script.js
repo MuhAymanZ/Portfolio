@@ -9,7 +9,7 @@ function visible(){
 }
 setTimeout(visible, 2500)
 
-mybutton = document.getElementById("top");
+var mybutton = document.getElementById("top");
 
 
 window.onscroll = function() {scrollFunction()};
@@ -29,3 +29,42 @@ function topFunction() {
 
 
 
+
+
+var scroll = window.requestAnimationFrame;
+var elementsToShow = document.querySelectorAll('.progress-done'); 
+
+function loop() {
+
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  scroll(loop);
+}
+
+
+loop();
+
+
+function isElementInViewport(el) {
+  
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
