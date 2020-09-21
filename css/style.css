@@ -567,3 +567,49 @@ footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+
+/* Media Query for mobile view */
+
+@Media screen and (max-width: 992px){
+
+.about{
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+    
+    
+}
+.about h2 {
+    
+    border: 0px ;
+    align-self: flex-start;
+
+}
+.about img {
+    width:250px;
+}
+
+.about img:hover{
+    width:250px;
+}
+
+.about p {
+    line-height: 40px;
+    font-size:1.2em;
+    padding:5%;
+}
+.row{
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+    position:relative;
+    top:100px;
+}
+
+
+
+}
+
