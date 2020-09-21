@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;  
     padding: 0;
+    flex-shrink: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -210,7 +211,7 @@ video{
 
 .about p{
       font-size: 160%;
-      width: 60%;
+      width: 70%;
       color: #e4265f;
       font-family: 'Epilogue', sans-serif;
       line-height: 60px;
@@ -588,17 +589,19 @@ footer{
 
 }
 .about img {
-    width:250px;
+    width:200px;
 }
 
 .about img:hover{
-    width:250px;
+    width:200px;
 }
 
 .about p {
-    line-height: 40px;
-    font-size:1.2em;
-    padding:5%;
+    width:500px;
+    line-height: 30px;
+    font-size:1em;
+    margin:10%;
+    
 }
 .row{
     flex-direction: column;
@@ -607,6 +610,8 @@ footer{
     flex-shrink:0;
     position:relative;
     top:100px;
+    margin:auto;
+    
 }
 
 
