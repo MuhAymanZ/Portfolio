@@ -3,9 +3,11 @@
     margin: 0;  
     padding: 0;
     flex-shrink: 0;
+    
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 div{
     color:#ffffff;
@@ -94,7 +96,7 @@ nav a:hover{
     white-space : nowrap;
     font-family: 'Roboto Slab', sans-serif;
     width : 22ch;
-    margin: 15px;
+    margin-bottom: 15px;
     font-size: 350%;
 }
 @keyframes typeh1 {
@@ -572,7 +574,20 @@ footer{
 
 /* Media Query for mobile view */
 
-@Media screen and (max-width: 992px){
+@Media screen and (max-width: 510px){
+
+
+   
+
+
+
+
+
+
+
+
+
+
 
 .about{
     flex-direction: column;
@@ -597,13 +612,13 @@ footer{
 }
 
 .about p {
-    width:500px;
+    width:400px;
     line-height: 30px;
     font-size:1em;
     margin:10%;
     
 }
-.row{
+.row, .proglang{
     flex-direction: column;
     justify-content:center;
     align-items:center;
@@ -612,7 +627,9 @@ footer{
     top:100px;
     margin:auto;
     
+    
 }
+
 
 
 
