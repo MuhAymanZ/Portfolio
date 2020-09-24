@@ -1,3 +1,6 @@
+
+// home text animation script //
+
 var X = document.getElementById("welc");
 var Y = document.getElementById("web");
 
@@ -8,6 +11,10 @@ function visible(){
     Y.style = "visible";
 }
 setTimeout(visible, 2500)
+
+
+
+// back to top icon script //
 
 var mybutton = document.getElementById("top");
 
@@ -26,10 +33,11 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+// responsive nav bar script // 
 
 
 
-
+// progress bar animation script //
 
 var scroll = window.requestAnimationFrame;
 var elementsToShow = document.querySelectorAll('.progress-done'); 

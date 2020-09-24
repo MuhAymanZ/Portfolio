@@ -4,10 +4,13 @@
     padding: 0;
     flex-shrink: 0;
     
+    
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    
+    
 }
 div{
     color:#ffffff;
@@ -16,6 +19,7 @@ div{
 body{
     margin:auto;
     background-color:#F1F2F2;
+    
 }
 a{
     text-decoration: none;
@@ -23,7 +27,30 @@ a{
 .main{
     display:flex;
     flex-direction: column;
+    
+    
 }
+
+i{
+    color:#c72253;
+}
+#top{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right:20px;
+    z-index: 99;
+    background-color: #F1F2F2;
+    border-radius: 50%;
+    border: #F1F2F2 solid 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#top:hover{
+    background-color: #0c0c0c;
+    border: #0c0c0c solid 1px;
+}
+
 
 header{
     display:flex;
@@ -31,9 +58,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:20px;
+
 }
 h1{
-font-size: 40px;
+font-size: 140%;
 color:#F1F2F2;
 flex-shrink: 0;
 font-family: 'Roboto Slab', serif;
@@ -44,14 +72,22 @@ cursor: pointer;
 
 
 }
+.icon i{
+    color: #F1F2F2;
+}
+.icon{
+    display:none;
+}
+
+
 nav{
-    font-size: 150%;
+    font-size: 100%;
     flex-shrink: 0;
     
     
    
 }
-nav a{
+.links{
    color :#F1F2F2;
    text-decoration: none;
    flex-shrink: 0;
@@ -61,9 +97,9 @@ nav a{
    font-family: 'Roboto Slab', serif;
 
 }
-nav a:hover{
+.links:hover{
     color:#ffffff;
-    font-size: 160%;
+    font-size: 120%;
     border-bottom: #F1F2F2 solid 4px;
 }
 
@@ -83,10 +119,12 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     padding:300px;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
     height: 100vh;
+    
     
 }
 .Home h2{
@@ -97,7 +135,7 @@ nav a:hover{
     font-family: 'Roboto Slab', sans-serif;
     width : 22ch;
     margin-bottom: 15px;
-    font-size: 350%;
+    font-size: 200%;
 }
 @keyframes typeh1 {
     0% {
@@ -117,7 +155,7 @@ nav a:hover{
 }
 .Home h3{
     font-family: 'Epilogue', sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     animation : typeh2 2.5s ;
     overflow : hidden;
     white-space : nowrap;
@@ -141,11 +179,13 @@ nav a:hover{
     
 }
 video{
-    height: 100vh;
-    width:100vw;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    overflow: hidden;
 
 }
+
 
 
 
@@ -182,10 +222,11 @@ video{
     border-top: 15px double #F1F2F2;
     
     
+    
 }
 
 .about img{
-    width:350px;
+    width:200px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s ease;
@@ -195,28 +236,28 @@ video{
 
 }
 .about img:hover{
-    width: 400px;
+    width: 240px;
 }
 .about h2{
     position: absolute;
     top: 5%;
     margin:1%;
     margin-left: 0;
-    padding:30px;
+    padding:25px;
     padding-left:50px;
-    font-size: 300%;
+    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
-    border-left: #F1F2F2 solid 15px;
+    border-left: #F1F2F2 solid 10px;
 }
 
 .about p{
-      font-size: 160%;
-      width: 70%;
+      font-size: 100%;
+      width: 60%;
       color: #e4265f;
       font-family: 'Epilogue', sans-serif;
-      line-height: 60px;
+      line-height: 30px;
       padding:3%;
       
       
@@ -225,6 +266,7 @@ video{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 
@@ -276,13 +318,13 @@ video{
     top: 5%;
     margin:1%;
     margin-left: 0;
-    padding:30px;
+    padding:25px;
     padding-left:50px;
-    font-size: 300%;
+    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
-    border-left: #F1F2F2 solid 15px;
+    border-left: #F1F2F2 solid 10px;
 }
 
 
@@ -290,7 +332,7 @@ video{
     display:flex;
     justify-content: space-around;
     color:#F1F2F2;
-    font-size: 180%;
+    font-size: 100%;
     position: relative;
     top:10%;
 
@@ -312,11 +354,11 @@ li{
 }
 .progress {
     width: 200%;
-    height: 35px;
+    height: 25px;
     display:flex;
     background-color: #0c0c0c;
     border-radius: 14px;
-    border: #F1F2F2 solid 5px;
+    border: #F1F2F2 solid 3px;
     
     
 }
@@ -324,7 +366,7 @@ li{
 .progress-done {
     display: none;
     border-radius: 14px;
-    height: 25px;
+    height: 20px;
     background-color:#c72253;
     line-height: 30px;
     
@@ -332,13 +374,13 @@ li{
 .progress-done.is-visible{
     display: block;
     border-radius: 14px;
-    height: 25px;
+    height: 20px;
     background-color:#c72253;
     line-height: 30px;
 }
 .progress p{
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 1.5em;
+    font-size: 1em;
     font-family: 'Epilogue', sans-serif;
     text-align: center;
     
@@ -421,25 +463,6 @@ li{
 
 
 
-i{
-    color:#c72253;
-}
-#top{
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right:20px;
-    z-index: 99;
-    background-color: #F1F2F2;
-    border-radius: 50%;
-    border: #F1F2F2 solid 1px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-#top:hover{
-    background-color: #0c0c0c;
-    border: #0c0c0c solid 1px;
-}
 
 
 
@@ -473,25 +496,30 @@ i{
     
     
 }
+
 .Contact h2{
     position: absolute;
     top: 5%;
     margin:1%;
     margin-left: 0;
-    padding:30px;
+    padding:25px;
     padding-left:50px;
-    font-size: 300%;
+    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
-    border-left: #F1F2F2 solid 15px;
+    border-left: #F1F2F2 solid 10px;
 }
 #cont{
     position: relative;
     top:35%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 .Contact h3{
-    font-size: 250%;
+    font-size: 150%;
     font-family: 'Epilogue', sans-serif;
     line-height: 250%;
     transition: 0.3s ease;
@@ -499,7 +527,7 @@ i{
 .Contact p{
 text-align: center;
 margin-top: 50px;
-font-size: 24px;
+font-size: 20px;
 color: #F1F2F2;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 transition: 0.3s ease;
@@ -514,21 +542,14 @@ transition: 0.3s ease;
     text-align: center;
     background-color: #0c0c0c;
     margin: auto;
-    width:140px;
+    width:100px;
     border-radius: 15%;
     cursor: pointer;
     transition: 0.3s ease;
 }
-#fb:hover{
+#fb:hover, #mail:hover,#call:hover {
     background-color: #F1F2F2;
 }
-#call:hover{
-    background-color: #F1F2F2;
-}
-#mail:hover{
-    background-color: #F1F2F2;
-}
-
 
 
 
@@ -562,11 +583,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     flex-shrink: 0;
     background-color: #000000;
     border: #F1F2F2 solid 2px;
-    font-size: 17px;
+    font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -574,14 +595,22 @@ footer{
 
 /* Media Query for mobile view */
 
-@Media screen and (max-width: 510px){
+@Media screen and (max-width: 767px){
 
 
-   
+.main{
+    flex-wrap: wrap;
+}
 
+.icon{
+    display: none;
+    float: right;
+}
+.icon:hover{
+    color: #ffffff;
+}
 
-
-
+ 
 
 
 
@@ -593,6 +622,7 @@ footer{
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    
     
     
     
@@ -625,13 +655,42 @@ footer{
     flex-shrink:0;
     position:relative;
     top:100px;
-    margin:auto;
+    margin:0;
     
     
 }
+.Skills{
+    flex-direction: column;
+      
+}
+.Skills h2 {
+    
+    border: 0px ;
+   
 
+}
+.lang{
+    padding:10%;
+}
 
-
-
+.Contact{
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.Contact h2{
+    border: 0px ;
+    align-self: flex-start;
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2%;
+}
+.PhoneNum, .Email , .Facebook{
+    flex-shrink: 0;
+    padding:2%;
+}
 }
 
