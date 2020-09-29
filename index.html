@@ -2,12 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no>
         <title> Portfolio </title>
 
-        <!--My Css Code-->
-        
-        <link  rel="stylesheet" href="css/style.css">
 
         <!--Google Fonts links-->
 
@@ -15,6 +12,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap" rel="stylesheet">
         
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+       
+
+        <!--My Css Code-->
+                
+        <link  rel="stylesheet" href="css/style.css">
+
+
     </head>
 
 
@@ -26,16 +38,36 @@
         </div>
 
             <header>
-               <a href="index.html"><h1> Mohamed Ayman </h1></a>
-               <nav class="topnav">
-                   <a class="links" href="index.html">Home</a>
-                   <a class="links" href="#about">About</a>
-                   <a class="links" href="#skills">Skills</a>
-                   <a class="links" href="#contact">Contact</a>
-                   <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-                </nav>
+                <div class="container">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="index.html"><h1>Mohamed Ayman</h1></a>
+                  
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
             </header>
 
             <section id="home" class="Home">
@@ -53,8 +85,8 @@
                 
                 <h2>About Me</h2>
                 <div class="row">
-                <img src="me.jpg" alt="A circular picture of me">
-                <p>My Name is Mohamed Ayman Gamal. I'm 19 years old, An Egyptian college student, Studying at the Faculty of Commerce and Business Administration, BIS Department, Helwan University in Cairo. I live in 6 October City, still learning about web developing. </p>
+                <img class="img-resposive" src="me.jpg" alt="A circular picture of me">
+                <p class="lead">My Name is Mohamed Ayman Gamal. I'm 19 years old, An Egyptian college student, Studying at the Faculty of Commerce and Business Administration, BIS Department, Helwan University in Cairo. I live in 6 October City, still learning about web developing. </p>
 
             </div>
             
@@ -117,17 +149,17 @@
                 <h2>Contact Me</h2>  
                 <div  id="cont">
                 <div class="PhoneNum"> 
-                    <h3> My Phone Number </h3> 
+                    <h3> Phone Number </h3> 
                     <div id="call"><i class="fas fa-phone-square-alt  fa-6x"></i> </div>
                     <p>01102465132</p>
                  </div>
                 <div class="Email"> 
-                    <h3> &nbsp; &nbsp; My Google Email </h3>
+                    <h3> &nbsp; &nbsp; &nbsp; &nbsp; Google Email </h3>
                     <div id="mail"> <i class="fas fa-envelope-square fa-6x"></i> </div>
                     <p>mido434370@gmail.com</p>
                  </div>
                  <div id="icon" class="Facebook">
-                    <h3> My FB Account </h3>
+                    <h3> FB Account </h3>
                     <div id="fb"> <a href="https://www.facebook.com/MrAymon666/" target="blank"> <i class="fab fa-facebook-square fa-6x"></i> </a> </div>
                     <a href="https://www.facebook.com/MrAymon666/" target="blank"> <p>Click The Icon</p> </a>
                  </div>

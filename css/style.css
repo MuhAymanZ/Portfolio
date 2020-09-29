@@ -5,29 +5,39 @@
     flex-shrink: 0;
     
     
+    
+    
+    
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    
-    
+    width: 100%;
+    overflow-x: hidden; 
 }
+
+
+
 div{
     color:#ffffff;
 }
 
 body{
-    margin:auto;
     background-color:#F1F2F2;
+    width:100%;
+    overflow-x: hidden; 
+    
     
 }
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 .main{
-    display:flex;
-    flex-direction: column;
-    
+   display: flex;
+   flex-direction: column;
+   
     
 }
 
@@ -42,7 +52,7 @@ i{
     z-index: 99;
     background-color: #F1F2F2;
     border-radius: 50%;
-    border: #F1F2F2 solid 1px;
+    border: #F1F2F2 solid 2px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -55,43 +65,52 @@ i{
 header{
     display:flex;
     background-color:#0c0c0c ;
-    justify-content: space-between;
-    align-items: center;
-    padding:20px;
+    
+    
+    
 
 }
-h1{
-font-size: 140%;
+header h1{
+font-size: 100%;
 color:#F1F2F2;
 flex-shrink: 0;
 font-family: 'Roboto Slab', serif;
-padding-left: 20px;
 cursor: pointer;
 
 
 
 
 }
-.icon i{
+
+.navbar-expand-md .navbar-nav {
+    
     color: #F1F2F2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Roboto Slab', serif;
 }
-.icon{
-    display:none;
+.nav-link{
+    color: #F1F2F2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Roboto Slab', serif;
 }
-
-
-nav{
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255, 1);
+    font-size: 110%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
     font-size: 100%;
-    flex-shrink: 0;
-    
-    
-   
 }
+.nav-item{
+    padding-left: 5%;
+}
+
+
 .links{
    color :#F1F2F2;
    text-decoration: none;
-   flex-shrink: 0;
-   flex-basis: 100%;
    padding:20px;
    transition: all 0.3s ease;
    font-family: 'Roboto Slab', serif;
@@ -99,7 +118,7 @@ nav{
 }
 .links:hover{
     color:#ffffff;
-    font-size: 120%;
+    font-size: 110%;
     border-bottom: #F1F2F2 solid 4px;
 }
 
@@ -118,12 +137,12 @@ nav{
 .Home{
     display: flex;
     flex-direction: column;
-    padding:300px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
     height: 100vh;
+    
     
     
 }
@@ -245,7 +264,6 @@ video{
     margin-left: 0;
     padding:25px;
     padding-left:50px;
-    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
@@ -320,7 +338,6 @@ video{
     margin-left: 0;
     padding:25px;
     padding-left:50px;
-    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
@@ -352,6 +369,7 @@ li{
     padding-left: 30%;
     flex-shrink: 0;
 }
+
 .progress {
     width: 200%;
     height: 25px;
@@ -504,7 +522,6 @@ li{
     margin-left: 0;
     padding:25px;
     padding-left:50px;
-    font-size: 170%;
     font-family: 'Roboto Slab', sans-serif;
     color:#ffffff;
     cursor: pointer;
@@ -537,7 +554,7 @@ transition: 0.3s ease;
 .Facebook a p:hover{
     color:#c72253;
 }
-#call , #mail, #fb{
+#call , #mail, #fb {
     
     text-align: center;
     background-color: #0c0c0c;
@@ -594,103 +611,4 @@ footer{
 
 
 /* Media Query for mobile view */
-
-@Media screen and (max-width: 767px){
-
-
-.main{
-    flex-wrap: wrap;
-}
-
-.icon{
-    display: none;
-    float: right;
-}
-.icon:hover{
-    color: #ffffff;
-}
-
- 
-
-
-
-
-
-
-
-.about{
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    
-    
-    
-    
-}
-.about h2 {
-    
-    border: 0px ;
-    align-self: flex-start;
-
-}
-.about img {
-    width:200px;
-}
-
-.about img:hover{
-    width:200px;
-}
-
-.about p {
-    width:400px;
-    line-height: 30px;
-    font-size:1em;
-    margin:10%;
-    
-}
-.row, .proglang{
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    flex-shrink:0;
-    position:relative;
-    top:100px;
-    margin:0;
-    
-    
-}
-.Skills{
-    flex-direction: column;
-      
-}
-.Skills h2 {
-    
-    border: 0px ;
-   
-
-}
-.lang{
-    padding:10%;
-}
-
-.Contact{
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-}
-.Contact h2{
-    border: 0px ;
-    align-self: flex-start;
-}
-#cont{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 2%;
-}
-.PhoneNum, .Email , .Facebook{
-    flex-shrink: 0;
-    padding:2%;
-}
-}
 
