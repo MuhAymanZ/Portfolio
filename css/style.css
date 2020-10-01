@@ -153,8 +153,7 @@ cursor: pointer;
     white-space : nowrap;
     font-family: 'Roboto Slab', sans-serif;
     width : 22ch;
-    margin-bottom: 15px;
-    font-size: 200%;
+    font-size: 170%;
 }
 @keyframes typeh1 {
     0% {
@@ -174,7 +173,7 @@ cursor: pointer;
 }
 .Home h3{
     font-family: 'Epilogue', sans-serif;
-    font-size: 150%;
+    font-size: 130%;
     animation : typeh2 2.5s ;
     overflow : hidden;
     white-space : nowrap;
@@ -189,19 +188,20 @@ cursor: pointer;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
     
 }
 .Home h2, .Home h3{
     color: #F1F2F2;
-    z-index: 1;
-    flex-shrink: 0;
-    
+    text-align: center;
+   
 }
 video{
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    
 
 }
 
@@ -243,25 +243,10 @@ video{
     
     
 }
-
-.about img{
-    width:200px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s ease;
-    border: #c72253 solid 5px ;
-    margin: auto;
-
-
-}
-.about img:hover{
-    width: 240px;
-}
 .about h2{
     position: absolute;
     top: 5%;
-    margin:1%;
-    margin-left: 0;
+    left: 0%;
     padding:25px;
     padding-left:50px;
     font-family: 'Roboto Slab', sans-serif;
@@ -270,8 +255,21 @@ video{
     border-left: #F1F2F2 solid 10px;
 }
 
+
+.about img{
+    width:200px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: #c72253 solid 5px ;
+    margin: auto;
+    
+
+
+}
+
+
 .about p{
-      font-size: 100%;
+      font-size: 90%;
       width: 60%;
       color: #e4265f;
       font-family: 'Epilogue', sans-serif;
@@ -279,11 +277,13 @@ video{
       padding:3%;
       
       
+      
 }   
-.row{
+.c-row{
     display:flex;
-    flex-direction: row;
     justify-content: space-around;
+    margin: auto;
+   
     
 }
 
@@ -334,8 +334,7 @@ video{
 .Skills h2{
     position: absolute;
     top: 5%;
-    margin:1%;
-    margin-left: 0;
+    left: 0%;
     padding:25px;
     padding-left:50px;
     font-family: 'Roboto Slab', sans-serif;
@@ -518,8 +517,7 @@ li{
 .Contact h2{
     position: absolute;
     top: 5%;
-    margin:1%;
-    margin-left: 0;
+    left: 0%;
     padding:25px;
     padding-left:50px;
     font-family: 'Roboto Slab', sans-serif;
@@ -531,7 +529,6 @@ li{
     position: relative;
     top:35%;
     display:flex;
-    flex-direction: row;
     justify-content: space-around;
     
 }
@@ -612,3 +609,72 @@ footer{
 
 /* Media Query for mobile view */
 
+@media screen and (max-width: 992px){
+    .c-row{
+        flex-direction: initial;
+    }
+    .about p {
+        width:initial;
+        flex-wrap: wrap;
+        flex-shrink: initial !important;
+        margin-left: 10%;
+        
+        
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .c-row{
+        flex-direction: column;
+    }
+
+    .Home, .about, .Skills, .Contact{
+        height: 75vh;
+    }
+    .Home h2{
+        font-size: 140% ;
+    }
+    .Home h3{
+        font-size: 100% ;
+    }
+    
+    #top:hover{
+        background-color: #F1F2F2;
+        border: #F1F2F2 solid 2px;
+    }
+    .c-row{
+        position: absolute;
+        bottom: 14%;
+        left:0%;
+        margin:auto;
+    }
+    .about img{
+        width:160px;
+    }
+    .about p{
+        
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .about h2{
+        border: 0;
+    }
+    .about p{
+        margin-left: 5%;
+    }
+    .c-row{
+        flex-direction: column;
+    }
+    .c-row{
+        position: absolute;
+        bottom: 0%;
+        left:0%;
+        margin:auto;
+    }
+
+}
