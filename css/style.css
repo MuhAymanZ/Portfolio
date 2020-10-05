@@ -55,6 +55,7 @@ i{
     border: #F1F2F2 solid 2px;
     cursor: pointer;
     transition: 0.3s ease;
+    opacity: 50%;
 }
 #top:hover{
     background-color: #0c0c0c;
@@ -279,7 +280,7 @@ video{
       
       
 }   
-.c-row{
+.about-row{
     display:flex;
     justify-content: space-around;
     margin: auto;
@@ -344,23 +345,26 @@ video{
 }
 
 
-.proglang{
-    display:flex;
+.skills-row {
+    display: flex;
     justify-content: space-around;
-    color:#F1F2F2;
-    font-size: 100%;
+    color: #F1F2F2;
+    font-size: 70%;
     position: relative;
-    top:10%;
-
+    top: 15%;
+    right: 12%;
 }
 .Skills h3{
     font-family: 'Epilogue', sans-serif;
     flex-shrink: 0;
+    font-size: 205%;
     
 }
+
 ul{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     list-style-type: none;
+    font-size: 150%;
     
 }
 li{
@@ -373,9 +377,10 @@ li{
     width: 200%;
     height: 25px;
     display:flex;
-    background-color: #0c0c0c;
+    background-color: #e0e0e0;
     border-radius: 14px;
     border: #F1F2F2 solid 3px;
+    
     
     
 }
@@ -398,8 +403,10 @@ li{
 .progress p{
     line-height: 1.5em;
     font-size: 1em;
-    font-family: 'Epilogue', sans-serif;
+    font-family: sans-serif;
+    font-weight: bolder;
     text-align: center;
+    padding:1px;
     
 }
 
@@ -539,12 +546,12 @@ li{
     transition: 0.3s ease;
 }
 .Contact p{
-text-align: center;
-margin-top: 50px;
-font-size: 20px;
-color: #F1F2F2;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-transition: 0.3s ease;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #F1F2F2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s ease;
 
 }
 
@@ -610,8 +617,8 @@ footer{
 /* Media Query for mobile view */
 
 @media screen and (max-width: 992px){
-    .c-row{
-        flex-direction: initial;
+    .about-row{
+        flex-direction: row;
     }
     .about p {
         width:initial;
@@ -621,19 +628,33 @@ footer{
         
         
     }
+    .skills-row {
+        flex-direction: column;
+        left:23%;
+        font-size: 50%;
+    }
+    .lang{
+        padding-top: 5%;
+    }
+    .progress{
+        width:50%;
+    }
+    li {
+        padding-left: 10%;
+    }
 }
 
 
 
 @media screen and (max-width: 768px){
-    .c-row{
+    .about-row{
         flex-direction: column;
     }
 
-    .Home, .about, .Skills, .Contact{
+    .Home, .about, .Contact{
         height: 75vh;
     }
-    .Home h2{
+    .Home h2, .about h2, .Skills h2, .Contact h2{
         font-size: 140% ;
     }
     .Home h3{
@@ -644,11 +665,11 @@ footer{
         background-color: #F1F2F2;
         border: #F1F2F2 solid 2px;
     }
-    .c-row{
+    .about-row{
         position: absolute;
-        bottom: 14%;
-        left:0%;
-        margin:auto;
+        bottom: 16%;
+        left: -2%;
+        margin: auto;
     }
     .about img{
         width:160px;
@@ -661,20 +682,21 @@ footer{
 }
 
 @media screen and (max-width:480px){
-    .about h2{
+    .Home h2, .about h2, .Skills h2, .Contact h2{
         border: 0;
     }
     .about p{
         margin-left: 5%;
     }
-    .c-row{
+    .about-row{
         flex-direction: column;
-    }
-    .c-row{
         position: absolute;
         bottom: 0%;
         left:0%;
         margin:auto;
+    }
+    .progress{
+        width:70%;
     }
 
 }
