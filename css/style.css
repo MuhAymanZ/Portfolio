@@ -258,7 +258,7 @@ video{
 
 
 .about img{
-    width:200px;
+    width:250px;
     border-radius: 50%;
     cursor: pointer;
     border: #c72253 solid 5px ;
@@ -270,7 +270,7 @@ video{
 
 
 .about p{
-      font-size: 90%;
+      font-size: 110%;
       width: 60%;
       color: #e4265f;
       font-family: 'Epilogue', sans-serif;
@@ -516,6 +516,7 @@ li{
     background-color: #0c0c0c;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     border-top: 15px double #F1F2F2;
     
     
@@ -534,8 +535,6 @@ li{
     border-left: #F1F2F2 solid 10px;
 }
 .cont-row{
-    position: relative;
-    top: 140%;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -622,12 +621,16 @@ footer p {
         flex-direction: row;
     }
     .about p {
+        font-size: 100%;
         width:initial;
         flex-wrap: wrap;
         flex-shrink: initial !important;
         margin-left: 10%;
         
         
+    }
+    .about img{
+        width:220px;
     }
     .skills-row {
         flex-direction: column;
@@ -651,7 +654,8 @@ footer p {
     }
     .cont-row{
         flex-direction: column;
-        top:38%;
+        position: relative;
+        top: 12%;
         
     }
     .fa-6x {
