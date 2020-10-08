@@ -72,7 +72,7 @@ header{
 
 }
 header h1{
-font-size: 100%;
+font-size: 115%;
 color:#F1F2F2;
 flex-shrink: 0;
 font-family: 'Roboto Slab', serif;
@@ -98,11 +98,11 @@ cursor: pointer;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255,255,255, 1);
-    font-size: 110%;
+    font-size: 80%;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.75);
-    font-size: 100%;
+    font-size: 70%;
 }
 .nav-item{
     padding-left: 5%;
@@ -512,6 +512,7 @@ li{
 .Contact{
     position: relative;
     height: 100vh;
+    width:100%;
     background-color: #0c0c0c;
     display:flex;
     flex-direction: column;
@@ -532,19 +533,15 @@ li{
     cursor: pointer;
     border-left: #F1F2F2 solid 10px;
 }
-#cont{
+.cont-row{
     position: relative;
-    top:35%;
+    top: 140%;
     display:flex;
     justify-content: space-around;
+    align-items: center;
     
 }
-.Contact h3{
-    font-size: 150%;
-    font-family: 'Epilogue', sans-serif;
-    line-height: 250%;
-    transition: 0.3s ease;
-}
+
 .Contact p{
     text-align: center;
     margin-top: 50px;
@@ -604,19 +601,23 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
     flex-shrink: 0;
     background-color: #000000;
-    border: #F1F2F2 solid 2px;
+    border: #F1F2F2 solid 3px;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer p {
+    margin-bottom: initial !important;
 }
 
 
 
-/* Media Query for mobile view */
+/* Media Query for tablet & mobile view */
 
 @media screen and (max-width: 992px){
+    
     .about-row{
         flex-direction: row;
     }
@@ -642,7 +643,24 @@ footer{
     li {
         padding-left: 10%;
     }
-}
+    #fb:hover, #mail:hover,#call:hover, #call , #mail, #fb {
+        background-color: initial;
+    }
+    .Facebook a p:hover{
+        color: #F1F2F2;
+    }
+    .cont-row{
+        flex-direction: column;
+        top:38%;
+        
+    }
+    .fa-6x {
+        font-size: 4em !important;
+    }
+    .Contact p{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 
 
 
@@ -651,11 +669,15 @@ footer{
         flex-direction: column;
     }
 
-    .Home, .about, .Contact{
+    .Home{
         height: 75vh;
+    }
+    .about{
+        height: 80vh;
     }
     .Home h2, .about h2, .Skills h2, .Contact h2{
         font-size: 140% ;
+        
     }
     .Home h3{
         font-size: 100% ;
@@ -675,7 +697,6 @@ footer{
         width:160px;
     }
     .about p{
-        
         line-height: 24px;
     }
     
@@ -685,18 +706,28 @@ footer{
     .Home h2, .about h2, .Skills h2, .Contact h2{
         border: 0;
     }
+    header h1{
+        font-size: 100%;
+    }
     .about p{
         margin-left: 5%;
+        
     }
     .about-row{
         flex-direction: column;
-        position: absolute;
-        bottom: 0%;
+        bottom: 5%;
         left:0%;
         margin:auto;
     }
     .progress{
         width:70%;
     }
+    .skills-row{
+        left:14%;
+    }
+    footer{
+        font-size: 10px;
+    }
+    
 
 }
