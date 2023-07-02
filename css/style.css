@@ -187,6 +187,7 @@ video {
 
 .about img {
 	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	cursor: pointer;
 	border: #c72253 solid 5px;
@@ -356,9 +357,23 @@ li {
 		width: 55%;
 	}
 }
+
 #bootstrap {
 	width: 55%;
 	animation: bootstrap 2s;
+}
+
+@keyframes git {
+	0% {
+		width: 0%;
+	}
+	65% {
+		width: 65%;
+	}
+}
+#git {
+	width: 65%;
+	animation: git 2s;
 }
 
 .Contact {
