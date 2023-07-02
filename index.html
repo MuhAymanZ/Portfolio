@@ -1,204 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Portfolio </title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
 
+		<!--Google Fonts links-->
 
-        <!--Google Fonts links-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
-        
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<!-- CSS only -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
 
+		<!--My Css Code-->
 
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-       
+	<body>
+		<div class="main">
+			<div id="top" onclick="topFunction()">
+				<i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+			</div>
 
-        <!--My Css Code-->
-                
-        <link  rel="stylesheet" href="css/style.css">
+			<header>
+				<div class="container">
+					<nav class="navbar navbar-expand-md navbar-dark">
+						<a class="navbar-brand" href="index.html"><h1>Mohamed Ayman</h1></a>
 
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#collapsibleNavbar"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-    </head>
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#skills">Skills</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
 
+			<section id="home" class="Home">
+				<h2 id="welc" class="welc">Welcome To My Portfolio</h2>
+				<h3 id="web" class="web">I'm a Web Designer</h3>
 
-    <body>
-        
-        <div class="main">
-            <div id="top" onclick="topFunction()">
-            <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
-        </div>
+				<div class="video-container">
+					<video autoplay loop muted poster="./media/poster.png">
+						<source src="./media/video.mp4" type="video/mp4" />
+					</video>
+				</div>
+			</section>
 
-            <header>
-                <div class="container">
-                <nav class="navbar navbar-expand-md navbar-dark">
-                    
-                    
-                    <a class="navbar-brand" href="index.html"><h1>Mohamed Ayman</h1></a>
-                  
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                          </li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div>
-            </header>
+			<section id="about" class="about">
+				<div class="container">
+					<h2>About Me</h2>
+					<div class="about-row">
+						<img
+							class="img-resposive"
+							src="./media/ayman.png"
+							alt="A circular picture of me"
+						/>
 
-            <section id="home" class="Home">
-                
-                <h2 id="welc" class="welc">Welcome To My Portfolio</h2>
-                <h3 id="web" class="web">I'm a Web Designer</h3>
-            
-                <div class="video-container">
-                <video autoplay loop muted poster="poster.png">
-                    <source src="video.mp4" type="video/mp4"> 
-                </video>
-            
-            </div>
-            </section>
+						<p class="lead">
+							My Name is Mohamed Ayman Zayed. I'm 22 Y/O, BIS department
+							graduate, I made some projects and got a multiple of
+							certifications in HTML, CSS, and JavaScript. I'm interested in
+							computers and hardware, and I'm willing to learn new things and
+							enhancing my skills.
+						</p>
+					</div>
+				</div>
+			</section>
 
+			<section id="skills" class="Skills">
+				<div class="container">
+					<h2>Skills</h2>
 
-            <section id="about" class="about">
-                <div class="container">
-                <h2>About Me</h2>
-                <div class="about-row">
+					<div class="skills-row">
+						<div class="prog">
+							<h3>Programs Skills</h3>
+							<ul>
+								<li>
+									Photoshop
+									<div class="progress">
+										<div class="progress-done" id="photoshop">
+											<p>90%</p>
+										</div>
+									</div>
+								</li>
 
-                    
-                <img class="img-resposive" src="me.jpg" alt="A circular picture of me">
-            
-            
-                <p class="lead">My Name is Mohamed Ayman Gamal. I'm 19 years old, An Egyptian college student, Studying at the Faculty of Commerce and Business Administration, BIS Department, Helwan University in Cairo. I live in 6 October City, still learning about web developing. </p>
-            
-            </div>
-            </div>
-            
-        </section>
+								<li>
+									Vegas Pro
+									<div class="progress">
+										<div class="progress-done" id="vegaspro">
+											<p>80%</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="lang">
+							<h3>Languages Skills</h3>
+							<ul>
+								<li>
+									HTML
+									<div class="progress">
+										<div class="progress-done" id="html">
+											<p>85%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									CSS
+									<div class="progress">
+										<div class="progress-done" id="css">
+											<p>80%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									Javascript
+									<div class="progress">
+										<div class="progress-done" id="js">
+											<p>70%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									Bootstrap
+									<div class="progress">
+										<div class="progress-done" id="bootstrap">
+											<p>55%</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section id="contact" class="Contact">
+				<div class="container">
+					<h2>Contact Me</h2>
 
-            <section id="skills" class="Skills">
-            <div class="container">
-                
-                <h2>Skills</h2>
-            
-                <div class="skills-row">
-                <div class=prog>
-                    <h3>Programs Skills</h3>
-                        <ul>
-                        <li>Photoshop <div class="progress">
-                            
-                            <div class="progress-done" id="photoshop">
-                                <p>90%</p>
-                            </div>
-                           
-                        </div>
-                        </li>
+					<div class="cont-row">
+						<div class="PhoneNum">
+							<div id="call">
+								<i class="fas fa-phone-square-alt fa-6x"></i>
+							</div>
+							<p>01102465132</p>
+						</div>
+						<div class="Email">
+							<div id="mail">
+								<i class="fas fa-envelope-square fa-6x"></i>
+							</div>
+							<p>muh.aymanzayed@gmail.com</p>
+						</div>
+						<div class="Facebook">
+							<div id="fb">
+								<a href="https://www.facebook.com/MrAymon666/" target="blank">
+									<i class="fab fa-facebook-square fa-6x"></i>
+								</a>
+							</div>
+							<a href="https://www.facebook.com/MrAymon666/" target="blank">
+								<p>Facebook</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                        <li>Vegas Pro <div class="progress">
-                            <div class="progress-done" id="vegaspro">
-                                <p>80%</p>
-                            </div>
-                        </div></li>
-                        </ul>
-                </div>
-                <div class="lang">
-                    <h3>Languages Skills</h3>
-                        <ul>
-                       <li>HTML <div class="progress">
-                        <div class="progress-done" id="html">
-                            <p>85%</p>
-                        </div>
-                    </div></li>
-                       <li> CSS <div class="progress">
-                        <div class="progress-done" id="css">
-                            <p>80%</p>
-                        </div>
-                    </div> </li>
-                       <li>Javascript <div class="progress">
-                        <div class="progress-done" id="js">
-                            <p>70%</p>
-                        </div>
-                    </div> </li>
-                       <li>Bootstrap <div class="progress">
-                        <div class="progress-done"  id="bootstrap">
-                            <p>55%</p>
-                        </div>
-                    </div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-            </section>
+			<footer>
+				<p>Copyright © 2020 All Rights Reserved By Mohamed Ayman.</p>
+			</footer>
+		</div>
 
-            <section id="contact" class="Contact"> 
-                <div class="container">
-
-                <h2>Contact Me</h2>  
-
-                <div class="cont-row">
-                <div class="PhoneNum"> 
-                   
-                    <div id="call">
-                        <i class="fas fa-phone-square-alt  fa-6x"></i> </div>
-                    <p>01102465132</p>
-                 </div>
-                <div class="Email"> 
-                    
-                    <div id="mail">
-                         <i class="fas fa-envelope-square fa-6x"></i> </div>
-                    <p>mido434370@gmail.com</p>
-                 </div>
-                 <div class="Facebook">
-                    <div id="fb"> 
-                        <a href="https://www.facebook.com/MrAymon666/" target="blank"> <i class="fab fa-facebook-square fa-6x"></i> </a> </div>
-                    <a href="https://www.facebook.com/MrAymon666/" target="blank"> <p>Facebook</p> </a>
-                 </div>
-                </div>
-            </div>
-            </section>
-                
-                
-            
-            <footer>
-                <p>Copyright © 2020 All Rights Reserved By Mohamed Ayman.</p> 
-            </footer>
-        </div>
-
-
-
-
- 
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <!--My Js Code-->
-        <script src="js/script.js"></script>
-        <!--font awsome kit-->
-        <script src="https://kit.fontawesome.com/eb7dada2f7.js" crossorigin="anonymous"></script>
-
-     
-    </body>
+		<!-- JS, Popper.js, and jQuery -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<!--My Js Code-->
+		<script src="js/script.js"></script>
+		<!--font awsome kit-->
+		<script
+			src="https://kit.fontawesome.com/eb7dada2f7.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
